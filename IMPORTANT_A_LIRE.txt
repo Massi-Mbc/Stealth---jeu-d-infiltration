@@ -1,0 +1,69 @@
+/*************************************
+ * Crée par :  MAIBECHE Massiouane   *
+ *************************************/
+ 
+ 
+Commande avec le makefile : 
+__________________________________________________________
+Lancer le makefile avec la commande suivante:
+ 
+make
+
+(crée les répertoires 'bin' et 'obj' s'il n'existe pas)
+__________________________________________________________
+Nettoyer les dossiers obj et bin avec la commande :
+
+make clean
+__________________________________________________________
+
+
+==========================================================
+But du jeu : 
+
+Vous incarnez un agent (pion rouge) et votre but est de
+Récupérer les reliques (pion bleu clair) sans se faire voir 
+par les gardiens (pion et cercle bleu).
+Pour vous aider vous pouvez récupérer le mana présente 
+dans les tuiles (pion orange), ce mana pourra vous 
+permettre de passer incognito devant les gardiens ou bien
+de décupler votre vitesse.
+Une fois les 3 reliques récupérées, rendez-vous dans le 
+coin en haut à gauche de la fenêtre pour finir le jeu.
+
+
+Le joueur devient blanc lorsqu'il devient invisible, et
+rose clair lorsqu'il decuple sa vitesse.
+
+Les gardiens sont bleus à l'origine, ils deviennent verts 
+lorsqu'il qu'une relique a disparu et qu'elle est détectée
+dans leur champ de vision. (*mode panique)
+
+Les tuiles sont orange à l'origine, et devienne violette 
+quand elles ne contiennent plus de mana.
+
+
+
+*mode panique : le gardien peut entrer au plus 3 fois
+en mode panique, il devient alors plus rapide et son 
+champs de vision augmentent.
+
+==========================================================
+Commande du jeu :
+
+-- Déplacement -- (tant que la touche reste presser)
+
+z = haut
+s = bas
+q = gauche
+d = droite
+
+
+-- Activation du mana -- (tant que la touche reste presser)
+
+espace = invisibilité (être invisible face aux gardiens)
+shift = super vitesse (permet de booster sa vitesse)
+
+Durant la partie, la touche 't' vous permettra de quitter
+le jeu en affichant le plateau de jeu en ascii sur la 
+sortie standard.
+==========================================================

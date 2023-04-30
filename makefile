@@ -1,4 +1,4 @@
-#Massiouane MAIBECHE
+#Crée par Massiouane MAIBECHE
 CC = gcc
 CFLAGS = -ansi -Wall -pedantic
 LDFLAGS =-lm -lrt
@@ -58,3 +58,4 @@ $(DIR_OBJ)/Score.o: $(DIR_SRC)/Score.c $(DIR_HEADER)/Score.h
 
 clean:
 	rm -f $(OBJ) $(DIR_BIN)/$(TARGET)
+
